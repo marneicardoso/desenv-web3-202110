@@ -1,0 +1,68 @@
+/*  Folhas de Estilo: DOM - HTML e JavaScript
+    Autor: prof. Marnei Cardoso
+    Data: 09/11/2021
+    Versão: 1.1
+*/
+
+/* Importa a fonte Roboto (Google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #002e66;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    background-color: #004166;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img {
+    /* width: 35%; */
+}
+
+/* Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    min-height: 450px;
+    padding: 25px;
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 25px 3px;
+    width: 8rem;
+}
+
+.btn-over {
+    background-color: #d94a38;
+    width: 230px;
+    color: #f9f9f9;
+    font-weight: 700;   /* 700 é equivalente a bold */
+    font-size: 1.5rem;  /* 1.5rem é equivalente a 27px */
+    text-align: center;
+}
+
+input {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+/* Extra */
+.display {
+    padding: 10px;
+    font-family: 'Consolas', sans-serif;
+    font-size: 2rem;
+    width: 15rem;
+    text-align: right;
+}
