@@ -11,15 +11,11 @@
 </head>
 <body>
     <div class="container">
-        <h3>Mudar imagem</h3>
+        <h3>Clicar, segurar e soltar</h3>
 
-        <p>
-            <img id="img01" src="img/arvore.jpg" alt="Árvore">
-        </p>
-
-        <p>
-            <button onclick="mudarImagem()">Mudar imagem</button>
-        </p>
+        <div class="btn btn-over" onmousedown="clicar(this)" onmouseup="soltar(this)">
+            Clicar!
+        </div>
     </div>
 
     <script src="js/script.js"></script>

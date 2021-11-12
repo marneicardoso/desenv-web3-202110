@@ -11,15 +11,19 @@
 </head>
 <body>
     <div class="container">
-        <h3>Mudar imagem</h3>
+        <h3>Contador de cliques</h3>
 
         <p>
-            <img id="img01" src="img/arvore.jpg" alt="Árvore">
+            <input type="text" class="display" disabled value="0">
         </p>
 
-        <p>
-            <button onclick="mudarImagem()">Mudar imagem</button>
-        </p>
+        <button class="btn" onclick="contadorClique()">
+            Incrementar contador
+        </button>
+
+        <button class="btn" onclick="zerarContador()">
+            Zerar contador
+        </button>
     </div>
 
     <script src="js/script.js"></script>
