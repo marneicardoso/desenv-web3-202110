@@ -1,3 +1,4 @@
+import java.text.MessageFormat;
 import java.util.Scanner;
 
 public class Calculadora {
@@ -20,7 +21,20 @@ public class Calculadora {
         resultado = valor1 + valor2;
 
         // 4. Mostra o resultado na tela (SAÍDA)
-        System.out.println("A soma é: " + resultado);
+
+        //  a. Concatenação de String + Atributo 
+        //System.out.println("O resultado é " + resultado);
+
+        //  b. Concatenação de várias Strings e vários Atributos
+        //System.out.println("O resultado da soma de " + valor1 + " + " + valor2 + " é " + resultado);
+
+        //  c. Utilizando o método PRINTF (herdado da linguagem C)
+        //System.out.printf("O resultado da soma de %f + %f é %f", valor1, valor2, resultado);
+        // %d é usado para Inteiro, %f para Decimal, %s para String (texto)
+
+        //  d. Interpolação de String e Atributos (para utilizar, importa java.text.MessageFormat)
+        System.out.println(MessageFormat.format("Resultado da soma de {0} + {1} é {2}", valor1, valor2, resultado));
+
     }
 
     // #DESAFIO: Criar as outras operações (subtrair, dividir, multiplicar)
