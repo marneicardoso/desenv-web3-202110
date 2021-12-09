@@ -1,11 +1,12 @@
 package br.edu.qi.agenda.model;
+import java.sql.SQLException;
 import br.edu.qi.agenda.view.Tela;
 
 public class Agenda {
     // Cria um objeto da classe Tela (GLOBAL)
     Tela tela = new Tela();
 
-    public void iniciarAgenda() {
+    public void iniciarAgenda() throws SQLException {
         // Monta o Menu
         String menu = ":: Agenda de Contatos ::\n\n" +
             "1. Cadastrar\n" +
@@ -22,7 +23,7 @@ public class Agenda {
 
             switch (opcao) {
                 case "1":
-                    //cadastrarContato();
+                    cadastrarContato();
                     break;
 
                 case "2":
@@ -49,7 +50,7 @@ public class Agenda {
         } // fecha while
     } // fecha iniciarAgenda()
 
-    private void cadastrarContato() {
+    private void cadastrarContato() throws SQLException {
         // Usuário informa os dados
         String nome = tela.informar("Informe o nome", "Nome", 1);
         String email = tela.informar("Informe o e-mail", "E-mail", 1);

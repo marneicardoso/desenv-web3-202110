@@ -5,7 +5,7 @@ public class Calculadora {
     // private Double resultado;
 
     // Objeto da classe Tela
-    Tela tela = new Tela();
+    private Tela tela = new Tela();
 
     // Métodos
     public void iniciarCalculadora() {
@@ -131,6 +131,7 @@ public class Calculadora {
         
         } catch (Exception e) {
             tela.mostrarMensagem("Informe apenas números");
+            System.out.println(e);
             return null;
         }
 

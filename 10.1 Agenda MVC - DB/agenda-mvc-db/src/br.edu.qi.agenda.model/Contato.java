@@ -11,7 +11,7 @@ public class Contato {
     public Contato(String _nome, String _email, String _senha) {
         this.nome = _nome;
         this.email = _email;
-        this.fone = _senha;
+        this.senha = _senha;
     }
 
     // Getters e Setters

@@ -2,10 +2,11 @@ package br.edu.qi.agenda.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class ContatoDAO {
     
-    public Boolean cadastrarContatoDAO(Contato contato) {
+    public Boolean cadastrarContatoDAO(Contato contato) throws SQLException {
         // instrução SQL para adicionar um registro no DB
         String sql =
             "INSERT INTO contato (nome, email, senha)" + 
