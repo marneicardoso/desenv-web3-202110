@@ -1,0 +1,165 @@
+
+/*  Agenda - Java Web
+
+    prof. Marnei Cardoso - 2021
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    color: #232323;
+    background-color: #5e5e5e;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: #dddddd;
+}
+
+.navbar {
+    color: #dddddd;
+    background-color: #232323;
+}
+
+.navbar-content {
+    width: 80%;
+    margin: auto;
+}
+
+.cor-java {
+    color: #ff9d00;
+}
+
+.menu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 0 2px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #dddddd;
+    padding: 12px 25px;
+    transition: 0.8s;
+}
+
+.menu a:hover {
+    background-color: #ff9d00;
+    transition: 0.5s;
+    color: #232323;
+}
+
+.corpo {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding: 35px 0;
+    min-height: 450px;
+}
+
+h1, h2, h3, p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rodape {
+    min-height: 450px;
+    text-align: justify;
+    font-size: 0.8rem;
+    color: #999999;
+    padding: 25px 0;
+    background-color: #232323;
+}
+
+.rodape-content {
+    width: 80%;
+    margin: auto;
+}
+
+.rodape a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #dddddd;
+    transition: 0.5s;
+}
+
+.status {
+	margin-top: 25px;
+	text-align: center;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form {
+	width: 50%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 25px 45px 75px 45px;
+    background-color: #f7f7f7;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 96%;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 25px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #999999;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+th {
+    background-color: #232323;
+    color: #f9f9f9;
+    padding: 12px;
+}
+
