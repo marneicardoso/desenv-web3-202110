@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Java Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="menu">
+                    <h3>Agenda <span class="cor-java">Java Web</span></h3>
+                
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/cadastro">cadastro</a></li>
+                        <li><a href="/contato">contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="corpo">
+            <h1>Lista de Contatos</h1>
+			
+			<p>
+				<button onclick="location.href='/buscarContato'">Buscar</button>
+			</p>
+			
+			<div th:if="${ not#lists.isEmpty(contatos)}">
+				<table>
+					<tr>
+						<th>ID</th>
+						<th>Nome</th>
+						<th>E-mail</th>
+						<th>Telefone</th>
+					</tr>
+					
+					<tr th:each="contato:${contatos}">
+						<td th:text="${contato.id}">
+						<td th:text="${contato.nome}">
+						<td th:text="${contato.email}">
+						<td th:text="${contato.fone}">
+					</tr>
+				</table>
+			</div>
+			
+			<h3 class="status" th:text="${resultado}"></h3>
+			
+        </div>
+
+        <div class="rodape">
+            <div class="rodape-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo accusantium earum nemo, iste aut ratione est dolor, temporibus consequuntur perferendis blanditiis tenetur eveniet provident itaque quidem qui deleniti molestias! Necessitatibus, odio ad enim ab alias in maxime quaerat obcaecati, porro eum sapiente cum odit accusamus, nam laborum molestiae totam qui assumenda amet pariatur voluptate. Velit accusantium reprehenderit accusamus facilis incidunt eum neque voluptatum a suscipit sunt, dignissimos quos iste et veritatis fugiat earum, totam ad voluptate, quibusdam tempora fuga porro enim. In odit quas, pariatur, nostrum explicabo consectetur tenetur dignissimos adipisci blanditiis vero quibusdam ipsum tempore minus, nesciunt ea.
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
