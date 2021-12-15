@@ -1,0 +1,23 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232323;
+    color: #232323;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: #dddddd;
+    height: 100vh;
+    padding: 35px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 15px;
+}
