@@ -10,14 +10,16 @@ public class ConexaoDB {
 	public Connection abrirConexao() throws SQLException {
 		// Atributos da conexão
 		String servidor = "localhost";
-		String porta = ":3307";
-		String nomeDB = "agenda_db";
+		// String porta = ":3306";
+		String porta = "";
+		String nomeDB = "/agenda";
 		String usuario = "root";
 		String senha = "";
 		
 		// Monta a URL de conexão
-		String url = "jdbc:mysql://" + servidor + porta + "/" + nomeDB;
+		String url = "jdbc:mysql://" + servidor + porta + nomeDB;
 				   // jdbc:mysql://localhost:3307/agenda_db
+				   // jdbc:mysql://localhost/agenda_db (sem a porta, no Xampp)
 		
 		// Interface de conexão com o DB
 		Connection conn = DriverManager.getConnection(url, usuario, senha);
